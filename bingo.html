@@ -45,9 +45,9 @@
         <div id="recordBox"></div>
     </div>
     <script>
-        let redBall = document.querySelectorAll('.red'),
-            blueBall = document.querySelectorAll('.blue'),
-            recordBox = document.querySelector('#recordBox'),
+        let redBall = document.getElementsByClassName('red'),
+            blueBall = document.getElementsByClassName('blue'),
+            recordBox = document.getElementById('recordBox'),
             nums = [];
         function _append (parent, text) {
             if (typeof text === 'string') {
@@ -87,7 +87,7 @@
             blueBall[0]['innerHTML'] = roll(16);
         }
         function remove (clz) {
-            recordBox.removeChild(document.querySelectorAll('.' + clz)[0]);
+            recordBox.removeChild(document.getElementsByClassName(clz)[0]);
         }
         function record () {
             let timestrap = Date.now();
