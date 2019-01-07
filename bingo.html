@@ -45,6 +45,10 @@
         <div id="recordBox"></div>
     </div>
     <script>
+        var redBall = document.getElementsByClassName('red'),
+            blueBall = document.getElementsByClassName('blue'),
+            recordBox = document.getElementById('recordBox'),
+            nums = [];
         function _append (parent, text) {
             if (typeof text === 'string') {
                 var temp = document.createElement('div');
@@ -102,10 +106,6 @@
             _append(recordBox, html);
         }
         window.onload = function() {
-            var redBall = document.getElementsByClassName('red'),
-                blueBall = document.getElementsByClassName('blue'),
-                recordBox = document.getElementById('recordBox'),
-                nums = [];
             Bingo();
         }
     </script>
