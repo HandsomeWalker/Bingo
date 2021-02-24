@@ -89,7 +89,7 @@
                 }
                 blueBall[0]['innerHTML'] = roll(16);
             }
-            function remove (clz) {
+            window.remove = function(clz) {
                 recordBox.removeChild(document.getElementsByClassName(clz)[0]);
             }
             function Record () {
