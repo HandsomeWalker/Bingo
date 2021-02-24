@@ -1,2 +1,2 @@
 # Bingo
-money money money
+双色球机选
